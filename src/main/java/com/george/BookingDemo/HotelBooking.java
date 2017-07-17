@@ -15,6 +15,7 @@ public class HotelBooking {
         this.nbOfNights = nbOfNights;
 
     }
+    public HotelBooking(){}
 
     public int getNbOfNights(){
         return nbOfNights;

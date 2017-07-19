@@ -10,17 +10,15 @@ import java.util.List;
 
 @Component
 public class DatabaseSeeder implements CommandLineRunner {
+    private BookingRespository bookingRespository;
+
+    @Autowired
+    public DatabaseSeeder (BookingRespository bookingRespository){
+    this.bookingRespository = bookingRespository;
+    }
+
     @Override
     public void run(String... strings) throws Exception {
-        private BookingRespository bookingRespository;
-
-        @Autowired
-        public DatabaseSeeder (BookingRespository  bookingRepository){
-             this.bookingRespository = bookingRespository;
-
-        }
-
-        public void run (String... strings) throws Exception
     {
         List<HotelBooking> bookings = new ArrayList<>();
 
